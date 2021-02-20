@@ -14,9 +14,12 @@ class ofApp : public ofBaseApp{
 		// Shader stuff. 
 		ofShader shader;
 		ofFbo baseFbo;
-		float currentPosition[2];  // Center of the screen
-		int frame = 0; 
-		ofPixels p; 
+		int frameCount = 0; 
+		int totalFrames = 0; 
 		int width; int height; 
 		float now = 0; 
+
+		int maxFrames; 
+		ofPixels pixels; 
+		string image_name; 
 };
